@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const Section = styled.div`
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+`
+
 export const Container = styled.div`
     width: 534px;
     height: 500px;
@@ -11,3 +17,7 @@ export const Title = styled.h2`
     margin-top: 12px;
     font-size: 38px;
 `
+export const UlTasks = styled.ul`
+    list-style-type: none;
+`
+
