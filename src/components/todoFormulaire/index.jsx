@@ -13,12 +13,14 @@ const ToDoForm = (props) => {
 
     const handleSubmit = () => {
         props.onTaskCreated(newTask);
+        setNewTask('')
     };
 
 
     return (
         <Form>
             <InputAddTask
+                value={newTask}
                 type="text"
                 placeholder="Add a thing to do..."
                 onChange={handleChange}

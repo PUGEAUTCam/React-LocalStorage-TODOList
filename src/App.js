@@ -3,7 +3,6 @@ import Home from './pages/Home.jsx';
 
 
 function App() {
-
     return (
         <BrowserRouter>
             <Routes>
@@ -11,8 +10,6 @@ function App() {
             </Routes>
         </BrowserRouter>
     );
-
-
 }
 
 export default App;

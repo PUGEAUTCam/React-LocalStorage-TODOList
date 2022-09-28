@@ -19,6 +19,7 @@ export const ButtonSubmit = styled.button`
     color: black;
     background-color: black;
     margin-left: 6px;
+    cursor: pointer;
     
 `
 

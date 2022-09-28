@@ -10,6 +10,7 @@ export const Container = styled.div`
     width: 534px;
     height: 500px;
     border-radius: 35px;
+    margin-top: 10px;
 `
 
 export const Title = styled.h2`
@@ -20,4 +21,5 @@ export const Title = styled.h2`
 export const UlTasks = styled.ul`
     list-style-type: none;
 `
+
 
