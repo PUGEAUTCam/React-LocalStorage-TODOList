@@ -19,13 +19,13 @@ const ContainerLists = () => {
         setTasks([...tasks, taskToAdd]);
     }
 
-    const handleDeleteTask = (taskToDelete) => {
-        setTasks(tasks.filter(task => task !== taskToDelete));
+    const handleDeleteTask = (taskIndex) => {
+        setTasks(tasks.filter((task, index) => index !== taskIndex));
     }
 
-    const handleTaskDone = (taskDone) => {
+    const handleTaskDone = (taskDone, taskIndex) => {
         setTasksDone([...tasksDone, taskDone]);
-        setTasks(tasks.filter(task => task !== taskDone));
+        setTasks(tasks.filter((task, index) => index !== taskIndex));
     }
 
     const handleDeleteAllTasks = () => {
@@ -45,8 +45,8 @@ const ContainerLists = () => {
                         <TasksToDO
                             key={index}
                             task={task}
-                            handleDeleteTask={handleDeleteTask}
-                            handleTaskDone={handleTaskDone}
+                            handleDeleteTask={(task) => handleDeleteTask(index)}
+                            handleTaskDone={(task) => handleTaskDone(task, index)}
                         />
                     )}
                 </UlTasks>

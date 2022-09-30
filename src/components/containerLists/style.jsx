@@ -4,6 +4,12 @@ export const Section = styled.div`
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
+    @media all and (max-width: 768px){
+        margin: 1px 26px;
+    
+    }
+
+
 `
 
 export const Container = styled.div`
